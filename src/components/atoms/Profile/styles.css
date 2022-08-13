@@ -1,0 +1,11 @@
+.profile-background {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.profile-image {
+  width: 70%;
+  height: 70%;
+  padding: 0.4rem;
+}
