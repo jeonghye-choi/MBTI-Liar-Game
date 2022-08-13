@@ -1,5 +1,6 @@
 import * as React from "react";
-import { StyledTextBox } from "./styles";
+import "./styles";
+import classnames from "classnames";
 
 interface Props {
   backgroundColor?: string;
@@ -13,14 +14,14 @@ function TextBox(props: Props) {
   const { backgroundColor, color, fontSize, fontWeight } = props;
 
   return (
-    <StyledTextBox
-      backgroundColor={backgroundColor}
-      color={color}
-      fontSize={fontSize}
-      fontWeight={fontWeight}
+    <div
+      className={classnames(
+        "styled-textbox",
+        `styled-textbox-background-${backgroundColor}`,
+      )}
     >
       {props.children}
-    </StyledTextBox>
+    </div>
   );
 }
 
