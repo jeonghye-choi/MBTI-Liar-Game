@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "prepare": "husk install",
     "precommit": "lint-staged",
+    "commitlint": "commitlint -e"
   },
   "lint-staged": {
     "**/*.ts": [
@@ -16,12 +17,18 @@
       "git add"
     ]
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
