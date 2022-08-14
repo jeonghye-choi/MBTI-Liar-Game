@@ -12,13 +12,14 @@ function GameResult() {
 
   const onResetClick = () => {
     gameActions.voteOnProgress(dummy_votes);
-    navigate("penalty");
+    navigate(`/games/room/${dummy_gameroomId}/penalty`);
   };
 
   const dummy_answer = "INFP";
   const dummy_question = "오늘 회사에서 우울한 일이 있었어요.";
   const dummy_winner = "라이어";
   const dummy_votes = "";
+  const dummy_gameroomId = "abcd";
 
   useEffect(() => {}, []);
 
@@ -37,9 +38,19 @@ function GameResult() {
         </>
       }
       bottoms={
-        <div>
-          <button onClick={onResetClick}>다시하기</button>
-          <button onClick={() => navigate("/")}>나가기</button>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            columnGap: "1vw",
+          }}
+        >
+          <Button backgroundColor="green" onClick={onResetClick}>
+            다시하기
+          </Button>
+          <Button backgroundColor="grey" onClick={() => navigate("/")}>
+            나가기
+          </Button>
         </div>
       }
     />

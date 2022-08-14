@@ -56,7 +56,11 @@ function GameQuestion() {
           </div>
         </>
       }
-      bottoms={<button onClick={onVoteLiarClick}>투표 하기</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onVoteLiarClick}>
+          투표 하기
+        </Button>
+      }
     />
   );
 }

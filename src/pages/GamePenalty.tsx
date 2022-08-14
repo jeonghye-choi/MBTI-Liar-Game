@@ -28,7 +28,11 @@ function GamePenalty() {
           <input type="text" />
         </>
       }
-      bottoms={<button onClick={onCompleteClick}>완료</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onCompleteClick}>
+          완료
+        </Button>
+      }
     />
   );
 }

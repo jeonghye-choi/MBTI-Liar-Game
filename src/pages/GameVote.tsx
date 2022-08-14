@@ -40,7 +40,11 @@ function GameVote() {
           </ul>
         </>
       }
-      bottoms={<button onClick={onVoteCompleteClick}>투표 완료</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onVoteCompleteClick}>
+          투표 완료
+        </Button>
+      }
     />
   );
 }

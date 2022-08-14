@@ -30,9 +30,12 @@ function GameIntroNickname() {
         </>
       }
       bottoms={
-        <button onClick={() => navigate(`/games/room/${dummy_gameroomId}`)}>
-          입장
-        </button>
+        <Button
+          backgroundColor="green"
+          onClick={() => navigate(`/games/room/${dummy_gameroomId}`)}
+        >
+          찾기
+        </Button>
       }
     />
   );

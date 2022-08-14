@@ -35,6 +35,7 @@ function GameIntroRoomId() {
           <input type="text" />
         </>
       }
+      contents={<input type="text" />}
       bottoms={
         <Button backgroundColor="green" onClick={onFindGameRoomClick}>
           찾기
