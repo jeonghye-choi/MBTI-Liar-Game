@@ -1,6 +1,8 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/atoms/Button";
+import Text from "../components/atoms/Text";
 import GameLayout from "../components/templates/GameLayout";
 
 function GameIntroNickname() {
@@ -15,9 +17,15 @@ function GameIntroNickname() {
       header="back"
       contents={
         <>
-          <h3>닉네임을 입력해 주세요</h3>
-          <h3>현재 총 3명이 입장해 있어요</h3>
-          <h4>방 아이디는 '{dummy_gameroomId}'이에요</h4>
+          <Text fontSize="1.25rem" fontWeight="500">
+            닉네임을 입력해 주세요
+          </Text>
+          <Text fontSize="1.25rem" fontWeight="500" color="#00AB2E">
+            현재 총 3명이 입장해 있어요
+          </Text>
+          <Text fontSize="0.875rem" fontWeight="400" color="#666666">
+            방 아이디는 '{dummy_gameroomId}'이에요
+          </Text>
           <input type="text" />
         </>
       }

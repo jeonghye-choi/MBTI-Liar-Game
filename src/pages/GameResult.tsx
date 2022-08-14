@@ -1,6 +1,8 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/atoms/Button";
+import Text from "../components/atoms/Text";
 import GameLayout from "../components/templates/GameLayout";
 import useGameActions from "../hooks/useGameActions";
 
@@ -25,8 +27,12 @@ function GameResult() {
       header="none"
       contents={
         <>
-          <h3>제시어는 '{}'이에요</h3>
-          <h3>라이어를 밝혀내지 못했어요</h3>
+          <Text fontSize="1.25rem" fontWeight="500">
+            제시어는 '{dummy_answer}'이에요
+          </Text>
+          <Text fontSize="1.25rem" fontWeight="500" color="#00AB2E">
+            라이어를 밝혀내지 못했어요
+          </Text>
           <div>'{dummy_winner}'가 이겼어요!!</div>
         </>
       }
