@@ -2,6 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import Button from "../components/atoms/Button";
+import InputBox from "../components/atoms/InputBox";
 import Text from "../components/atoms/Text";
 import GameLayout from "../components/templates/GameLayout";
 
@@ -24,8 +25,7 @@ function GamePenalty() {
           <Text fontSize="1.25rem" fontWeight="500">
             벌칙을 입력해 주세요
           </Text>
-          <h3></h3>
-          <input type="text" />
+          <InputBox />
         </>
       }
       bottoms={

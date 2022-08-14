@@ -2,6 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/atoms/Button";
+import InputBox from "../components/atoms/InputBox";
 import Text from "../components/atoms/Text";
 import GameLayout from "../components/templates/GameLayout";
 
@@ -26,7 +27,7 @@ function GameIntroNickname() {
           <Text fontSize="0.875rem" fontWeight="400" color="#666666">
             방 아이디는 '{dummy_gameroomId}'이에요
           </Text>
-          <input type="text" />
+          <InputBox />
         </>
       }
       bottoms={

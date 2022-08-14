@@ -5,6 +5,7 @@ import useGameRoomActions from "../hooks/useGameRoomActions";
 import { useEffect } from "react";
 import Button from "../components/atoms/Button";
 import Text from "../components/atoms/Text";
+import InputBox from "../components/atoms/InputBox";
 
 function GameIntroRoomId() {
   let navigate = useNavigate();
@@ -32,10 +33,9 @@ function GameIntroRoomId() {
           <Text fontSize="1.25rem" fontWeight="500">
             방 아이디를 입력해 주세요
           </Text>
-          <input type="text" />
+          <InputBox />
         </>
       }
-      contents={<input type="text" />}
       bottoms={
         <Button backgroundColor="green" onClick={onFindGameRoomClick}>
           찾기
