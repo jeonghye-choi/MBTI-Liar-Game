@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import Button from "../components/atoms/Button";
 import GameLayout from "../components/templates/GameLayout";
 
 function GamePenalty() {
@@ -23,7 +24,11 @@ function GamePenalty() {
           <input type="text" />
         </>
       }
-      bottoms={<button onClick={onCompleteClick}>완료</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onCompleteClick}>
+          완료
+        </Button>
+      }
     />
   );
 }

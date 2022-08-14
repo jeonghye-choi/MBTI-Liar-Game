@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Button from "../components/atoms/Button";
 import GameLayout from "../components/templates/GameLayout";
 import useGameRoomActions from "../hooks/useGameRoomActions";
 
@@ -52,11 +53,23 @@ function GameRoom() {
       }
       bottoms={
         <div>
-          <div>
-            <button onClick={onOutofGameRoom}>방나가기</button>
-            <button onClick={onInviteClick}>초대하기</button>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              columnGap: "1vw",
+            }}
+          >
+            <Button backgroundColor="grey" onClick={onOutofGameRoom}>
+              게임 방나가기
+            </Button>
+            <Button backgroundColor="grey" onClick={onInviteClick}>
+              초대하기
+            </Button>
           </div>
-          <button onClick={() => navigate("penalty")}>게임 시작</button>
+          <Button backgroundColor="green" onClick={() => navigate(`penalty`)}>
+            게임 시작
+          </Button>
         </div>
       }
     />

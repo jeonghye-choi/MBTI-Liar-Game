@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/atoms/Button";
 import GameLayout from "../components/templates/GameLayout";
 
 function GameVote() {
@@ -36,7 +37,11 @@ function GameVote() {
           </ul>
         </>
       }
-      bottoms={<button onClick={onVoteCompleteClick}>투표 완료</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onVoteCompleteClick}>
+          투표 완료
+        </Button>
+      }
     />
   );
 }

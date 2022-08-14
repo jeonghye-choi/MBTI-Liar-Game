@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import GameLayout from "../components/templates/GameLayout";
 import useGameRoomActions from "../hooks/useGameRoomActions";
 import { useEffect } from "react";
+import Button from "../components/atoms/Button";
 
 function GameIntroRoomId() {
   let navigate = useNavigate();
@@ -26,7 +27,11 @@ function GameIntroRoomId() {
     <GameLayout
       header="back"
       contents={<input type="text" />}
-      bottoms={<button onClick={onFindGameRoomClick}>찾기</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onFindGameRoomClick}>
+          찾기
+        </Button>
+      }
     />
   );
 }

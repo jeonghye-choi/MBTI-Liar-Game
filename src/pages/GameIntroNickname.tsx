@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/atoms/Button";
 import GameLayout from "../components/templates/GameLayout";
 
 function GameIntroNickname() {
@@ -22,9 +23,12 @@ function GameIntroNickname() {
         </>
       }
       bottoms={
-        <button onClick={() => navigate(`/games/room/${dummy_gameroomId}`)}>
-          입장
-        </button>
+        <Button
+          backgroundColor="green"
+          onClick={() => navigate(`/games/room/${dummy_gameroomId}`)}
+        >
+          찾기
+        </Button>
       }
     />
   );
