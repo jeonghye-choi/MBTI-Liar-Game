@@ -9,7 +9,10 @@ const globalStyle = (theme: Theme): SerializedStyles => css`
   }
   body {
     margin: 0;
-    padding: 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont,
       "Apple SD Gothic Neo", Pretendard, Roboto, "Segoe UI", "Malgun Gothic",
       sans-serif;
