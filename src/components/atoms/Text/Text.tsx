@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import * as React from "react";
 import "./styles.css";
 
@@ -13,9 +12,9 @@ function Text(props: Props) {
   const { children, color, fontSize, fontWeight } = props;
 
   return (
-    <div className="text" style={{color, fontSize, fontWeight}}>
+    <div className="text" style={{ color, fontSize, fontWeight }}>
       {children}
-    </div>   
+    </div>
   );
 }
 

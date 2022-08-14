@@ -2,6 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/atoms/Button";
+import Text from "../components/atoms/Text";
 import GameLayout from "../components/templates/GameLayout";
 
 function GameVote() {
@@ -20,7 +21,9 @@ function GameVote() {
       header="none"
       contents={
         <>
-          <h3>투표를 해주세요</h3>
+          <Text fontSize="1.25rem" fontWeight="500">
+            투표를 해주세요
+          </Text>
           <ul className="member-list">
             <li className="profile-box">
               <span>profile</span>

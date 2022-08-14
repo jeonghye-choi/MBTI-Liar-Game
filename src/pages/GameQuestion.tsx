@@ -2,6 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/atoms/Button";
+import Text from "../components/atoms/Text";
 import GameLayout from "../components/templates/GameLayout";
 import useGameActions from "../hooks/useGameActions";
 
@@ -29,11 +30,15 @@ function GameQuestion() {
       contents={
         <>
           <div>
-            <h3>제시어는 '{dummy_answer}'이예요</h3>
+            <Text fontSize="1.25rem" fontWeight="500">
+              제시어는 '{dummy_answer}'이예요
+            </Text>
             <div>{dummy_question}</div>
           </div>
           <div>
-            <h3>순서</h3>
+            <Text fontSize="1.25rem" fontWeight="500">
+              순서
+            </Text>
             <ul className="member-list">
               <li className="profile-box">
                 <span>profile</span>
