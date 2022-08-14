@@ -6,13 +6,12 @@ const globalStyle = (theme: Theme): SerializedStyles => css`
   html {
     font-size: 16px;
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
   }
   body {
-    margin: 0;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0;
+    height: 100%;
     font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont,
       "Apple SD Gothic Neo", Pretendard, Roboto, "Segoe UI", "Malgun Gothic",
       sans-serif;
