@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/atoms/Button";
 import GameLayout from "../components/templates/GameLayout";
 import useGameActions from "../hooks/useGameActions";
 
@@ -50,7 +51,11 @@ function GameQuestion() {
           </div>
         </>
       }
-      bottoms={<button onClick={onVoteLiarClick}>투표 하기</button>}
+      bottoms={
+        <Button backgroundColor="green" onClick={onVoteLiarClick}>
+          투표 하기
+        </Button>
+      }
     />
   );
 }
