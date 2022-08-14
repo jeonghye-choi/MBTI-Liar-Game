@@ -1,18 +1,23 @@
+import classnames from "classnames";
 import * as React from "react";
 import "./styles.css";
-import classnames from "classnames";
 
 interface Props {
   children: React.ReactNode;
+  backgroundColor: "green" | "grey";
+  onClick?: () => void;
 }
 
 function TextBox(props: Props) {
-  const { children } = props;
+  const { backgroundColor, onClick, children } = props;
 
   return (
-    <div className="text-box">
+    <button
+      className={classnames("text-box", `background-color-${backgroundColor}`)}
+      onClick={onClick}
+    >
       {children}
-    </div>   
+    </button>
   );
 }
 

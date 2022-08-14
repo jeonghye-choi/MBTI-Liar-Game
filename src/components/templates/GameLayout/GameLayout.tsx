@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useEffect } from "react";
+import "./styles.css";
 
 interface Props {
   header: "back" | "settings" | "none";
@@ -12,7 +13,7 @@ function GameLayout(props: Props) {
   useEffect(() => {}, []);
 
   return (
-    <article>
+    <article className="game-layout">
       <section className="header">
         {header === "back" ? <div>back</div> : null}
         {header === "settings" ? <div>게임방법보기</div> : null}

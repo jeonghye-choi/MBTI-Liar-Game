@@ -1,12 +1,28 @@
 .text-box {
-  background-color: #FFEFBD;
+  background-color: #ffefbd;
   color: black;
   width: 100%;
-  padding-bottom: 1.4rem;
-  padding-top: 1.4rem;
+  padding: 3rem 1.4rem;
   border-radius: 10px;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 24px;
   font-weight: 500;
   text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.text-box.background-color-green {
+  background-color: #c2dcc6;
+}
+.text-box.background-color-green:active,
+.text-box.background-color-green:hover {
+  background-color: #34a853;
+}
+
+.text-box.background-color-grey {
+  background-color: #ddd;
+}
+.text-box.background-color-grey:active,
+.text-box.background-color-grey:hover {
+  background-color: #b9b9b9;
 }

@@ -1,0 +1,20 @@
+.game-layout {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50px);
+  margin: 25px;
+  position: relative;
+}
+
+.game-layout > .header {
+  height: 35px;
+  margin-bottom: 10px;
+}
+.game-layout > .contents {
+  flex: 1;
+}
+.game-layout > .bottoms {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
