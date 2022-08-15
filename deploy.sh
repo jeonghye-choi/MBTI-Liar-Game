@@ -7,7 +7,7 @@ set -e
 yarn build
 
 # navigate into the build output directory
-cd dist
+cd client/dist
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:jeonghye-choi/mbti-liar-front.git main:gh-pages
+git push -f git@github.com:jeonghye-choi/mbti-liar-game.git main:gh-pages
 
-cd -
+cd client/dist
