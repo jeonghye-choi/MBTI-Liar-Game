@@ -1,53 +1,23 @@
-# **MBTI-Liar**
+<br/>
+<h1 align="middle">MBTI-Liar-Game</h1>
+<p align="middle">
+놀다가는 앞마당 해커톤 10조 MBTI Liar Game
+<br/>
+MBTI 과몰입형을 위한 라이어 게임
+<br/>
+프런트엔드 2명, 백앤드 2명 구성으로 프로젝트를 진행했습니다
+</p>
+<p align="middle">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="template version"/>
+  <img src="https://img.shields.io/badge/language-md-md.svg?style=flat-square"/>
+</p>
+<br/>
 
-놀다가는 앞마당 해커톤 10조 MBTI-Liar의 `Front-end` repository 입니다.
+- Frontend Members
 
-**프런트엔드 2명, 백앤드 2명** 구성으로 프로젝트를 진행했습니다. 
-<br><br>
+  - 최정혜 : @jeonghye-choi
+  - 최주영 : @yuw0l
 
-### **Frontend Member**
-<hr>
-
-- 최정혜 : @jeonghye-choi
-- 최주영 : @yuw0l
-<br><br>
-
-### **Summary**
-<hr>
-MBTI 과몰입형을 위한 라이어 게임<br>
-
-- 배경 :
-  - 팀원 모두 MBTI 과몰입형.
-  - 평소 즐겨하는 라이어 게임에 MBTI를 적용.
-<br><br>
-
-### **Disign Frame**
-<hr>
-
-<br><br>
-
-### **Architecture**
-<hr>
-
-<br><br>
-
-### **MBTI-liar Client**
-<hr>
-
-**Getting Started**
-
-```bash
-# Install
-$ yarn
-
-# run
-$ yarn dev
-# or
-$ yarn vite
-```
-
-### **Feature**
-<hr>
-
-
-<br><br>
+- Backend Members
+  - 최정은 : @JeongeunChoi
+  - 이건창 : @this-is-spear
